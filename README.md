@@ -33,3 +33,6 @@ receive-message
 ring-session {:value 22f2392c-3861-4863-bf8d-639dcee0b9cd}}, :remote-addr 0:0:0:0:0:0:0:1, :params {}, :flash nil, :headers {accept text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8, accept-encoding gzip, deflate, br, accept-language ja,en-US;q=0.9,en;q=0.8,pt;q=0.7,fr;q=0.6, connection keep-alive, cookie JSESSIONID=zGYyHu24MS_SFbI4--gbWB_IVQJqrvyTg1jqqMbV; ring-session=22f2392c-3861-4863-bf8d-639dcee0b9cd, host localhost:3000, upgrade-insecure-requests 1, user-agent Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36}, :async-channel #object[org.httpkit.server.AsyncChannel 0x411eee1b /0:0:0:0:0:0:0:1:3000<->/0:0:0:0:0:0:0:1:38828], :server-port 3000, :content-length 0, :form-params {}, :websocket? false, :session/key nil, :query-params {}, :content-type nil, :character-encoding utf8, :uri /room, :server-name localhost, :query-string nil, :path-params {}, :body nil, :multipart-params {}, :scheme :http, :request-method :get
 , :session {}}
 ```
+
+
+This problem occurs with aleph and http - kit, and it does not seem to happen with immutant and jetty.
